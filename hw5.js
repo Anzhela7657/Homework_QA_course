@@ -3,11 +3,10 @@ function myisNaN(value) {
     if (typeof value === 'number') {
         result = value !== value;
     } else {
-        // Спроба перетворити значення на число і перевірити, чи воно NaN
         const num = Number(value);
         result = num !== num;
     }
-    console.log(result); // Вивід результату безпосередньо у функції
+    console.log(result); 
     return result;
 }
 
